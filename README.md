@@ -138,7 +138,7 @@ digits of interval precision.
 
 **Imported, not reproved here.** The analytic interface — the window constant
 $H(v)\ge672457041414544284/10^{18}$, the stability argument giving
-$S\ge H_{\rm cert}N+\operatorname{tr}\Psi(M)-o(N)$, and the shifted-block
+$S\ge H_{\mathrm{cert}}N+\mathrm{tr}\Psi(M)-o(N)$, and the shifted-block
 pinching and averaging — comes from Claude/Anthropic's Theorem D and the
 `trmdy` re-optimized window. The window and its kernel are unchanged from
 that predecessor. If any of those inputs is wrong, this bound falls with them.
