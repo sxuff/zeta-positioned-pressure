@@ -1,0 +1,6 @@
+verify_positioned
+verify_positioned.exe
+tables-rebuilt/
+.tmp*/
+__pycache__/
+*.pyc

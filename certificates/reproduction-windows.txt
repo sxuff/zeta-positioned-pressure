@@ -1,0 +1,42 @@
+reproduction=independent-second-platform
+date=2026-08-12
+host_platform=Windows-11-Pro-10.0.26200-x86_64 (MSYS2)
+compiler=g++ (MinGW-w64, msys2) -O3 -std=c++20 -pthread -ffp-contract=off
+python=3.12.5 mpmath=1.3.0 numpy=2.1.3
+cores_available=12
+
+# Tables were regenerated from src/build_tables.py on this platform, not copied.
+# SHA-256 of the resulting file bytes, compared against certificates/positioned-51063.txt:
+w_lower.bin=149bdfd31f700ad2f3c217be779b1913719d12709f608699a32a4d3acb4f4cc0 MATCH
+w_second_lower.bin=f6d27fd43742de9baa592c477299ec570ec879aeb100207b9ad0e48f5fa9ecf1 MATCH
+w_mid_lower.bin=8050907742d2e5d40328317d79d73d6168f85e24ea7dc4723c04f62dd169bc29 MATCH
+w_mid_upper.bin=933f5dd21c8f90bfaaf20b756af91aa729a9f81132505beb25c00c7ccce2a4f5 MATCH
+w_prime_mid_lower.bin=577b464bd54dcf2cb7b0d9c66400d266be1514d19789d71c9c46c3a1a6c474e7 MATCH
+w_prime_mid_upper.bin=84056d8d042cb12e2c3a1c1c75b75852e57227f40f91069b9daff5f03a100a66 MATCH
+all_six_tables_byte_identical=true
+
+# verify_positioned.cpp carries a one-line portability fix on this platform
+# (std::fabsl -> std::fabs, see the note at that line), so its digest differs
+# from the digest recorded in the original certificate. Nothing else changed.
+verify_source_sha256=6789df2949c3426bf82ec48240f7df6c33dbfa9b67c26897d306eeb16cbbd0a4
+verify_source_sha256_original=be34ac17d4d5be7b1072e78e5b3d5477908980dd98fe55b2727958ad5ea24c5f
+
+# Run 1 -- headline target, tangent pruning on, 5 threads (matches recorded run).
+target=0.0051063000000000002 cells=56530 threads=5 components=2,2,3,3,2,2 initial=144 tangent=on required_cells=56498
+VERIFIED=true nodes=2037322 pruned=1018733 splits=1018589 convex=1300541 tangent=554949 max_depth=73 seconds=9.0232576000000009 rate=225785.64087541951
+
+# Run 2 -- tangent-free hardening target, 5 threads (matches recorded run).
+target=0.0050699999999999999 cells=56530 threads=5 components=2,2,3,3,2,2 initial=144 tangent=off required_cells=56096
+VERIFIED=true nodes=363259330 pruned=181629737 splits=181629593 convex=0 tangent=0 max_depth=68 seconds=33.498846999999998 rate=10843935.315146817
+
+# Run 3 -- headline target at 12 threads, to show the search is thread-count independent.
+target=0.0051063000000000002 cells=56530 threads=12 components=2,2,3,3,2,2 initial=144 tangent=on required_cells=56498
+VERIFIED=true nodes=2037322 pruned=1018733 splits=1018589 convex=1300541 tangent=554949 max_depth=73 seconds=6.6174818000000002 rate=307869.67936957529
+
+# Every search counter -- nodes, pruned, splits, convex, tangent, max_depth --
+# is identical to the recorded Linux certificate in all three runs.
+node_counts_match_recorded=true
+
+# src/check_final_bound.py output on this platform was character-for-character
+# identical to certificates/final-arithmetic.txt.
+final_arithmetic_match=true

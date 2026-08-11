@@ -1,0 +1,13 @@
+certificate=position-dependent-pressure-seven-point
+date=2026-08-11
+host_platform=Linux-6.18.35-x86_64-with-glibc2.41
+compiler=g++ (Debian 14.2.0-19) 14.2.0
+verify_source_sha256=be34ac17d4d5be7b1072e78e5b3d5477908980dd98fe55b2727958ad5ea24c5f
+w_lower.bin_sha256_file_bytes=149bdfd31f700ad2f3c217be779b1913719d12709f608699a32a4d3acb4f4cc0
+w_second_lower.bin_sha256_file_bytes=f6d27fd43742de9baa592c477299ec570ec879aeb100207b9ad0e48f5fa9ecf1
+w_mid_lower.bin_sha256_file_bytes=8050907742d2e5d40328317d79d73d6168f85e24ea7dc4723c04f62dd169bc29
+w_mid_upper.bin_sha256_file_bytes=933f5dd21c8f90bfaaf20b756af91aa729a9f81132505beb25c00c7ccce2a4f5
+w_prime_mid_lower.bin_sha256_file_bytes=577b464bd54dcf2cb7b0d9c66400d266be1514d19789d71c9c46c3a1a6c474e7
+w_prime_mid_upper.bin_sha256_file_bytes=84056d8d042cb12e2c3a1c1c75b75852e57227f40f91069b9daff5f03a100a66
+target=0.0050699999999999999 cells=56530 threads=5 components=2,2,3,3,2,2 initial=144 tangent=off required_cells=56096
+VERIFIED=true nodes=363259330 pruned=181629737 splits=181629593 convex=0 tangent=0 max_depth=68 seconds=33.910342708999998 rate=10712346.174655112

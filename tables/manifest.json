@@ -1,0 +1,33 @@
+{
+  "grid": 4000,
+  "precision_decimal_digits": 45,
+  "target": "51063/10000000",
+  "coarse_cells": 56530,
+  "midpoint_values": 113061,
+  "files": {
+    "w_lower.bin": {
+      "length": 56530,
+      "sha256_big_endian_float_stream": "cb49f40b5c6d8b706ed541be625fe30e7828dc89bad1ebfb025b3c8791345107"
+    },
+    "w_second_lower.bin": {
+      "length": 56530,
+      "sha256_big_endian_float_stream": "d546266a3e5fe5764f5502860c0fbd0046ef25d31289e50aa2c784737658335a"
+    },
+    "w_mid_lower.bin": {
+      "length": 113061,
+      "sha256_big_endian_float_stream": "6342fd23c5f2c8c11035215b8385d6cca83dc9674137a3e12bb6ddf25a1d4c2e"
+    },
+    "w_mid_upper.bin": {
+      "length": 113061,
+      "sha256_big_endian_float_stream": "cb76839e64c82e37c9eea76bc74f09b0e0fda59f628955836636428b2adc1ccf"
+    },
+    "w_prime_mid_lower.bin": {
+      "length": 113061,
+      "sha256_big_endian_float_stream": "9e3205cdb1a1ca4ad69c8fd9914bb5be180edbf9a9573c46e94d25d626a66db0"
+    },
+    "w_prime_mid_upper.bin": {
+      "length": 113061,
+      "sha256_big_endian_float_stream": "0872b91cfa9e3912992b7b8583f0871194a03ccac4b98cc049d3890991e4b176"
+    }
+  }
+}

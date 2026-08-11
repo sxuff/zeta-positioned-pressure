@@ -1,0 +1,55 @@
+{
+  "description": "Reflection-symmetric seven-point certificate with position-dependent gap pressure.",
+  "window": {
+    "coefficient_denominator": 1000000000,
+    "coefficient_numerators": [
+      1000000000, 3322500, -7609135, 1190194,
+      -731476, -1680572, 1141360
+    ],
+    "frequencies": ["sqrt(2)", "2*pi", "4*pi", "6*pi", "8*pi", "10*pi", "12*pi"]
+  },
+  "points": 7,
+  "gaps": 6,
+  "target": {"numerator": 51063, "denominator": 10000000},
+  "position_pressure": {
+    "denominator": 2300000000,
+    "numerators": [831522, 1096590, 1071888, 1071888, 1096590, 831522],
+    "total": {"numerator": 3, "denominator": 1150}
+  },
+  "pair_weight_denominator": 1000000000,
+  "pair_weights": {
+    "0,1": 219313883,
+    "0,2": 870819909,
+    "0,3": 325978722,
+    "0,4": 1000000000,
+    "0,5": 1000000000,
+    "0,6": 2000000000,
+    "1,2": 330070053,
+    "1,3": 129180091,
+    "1,4": 674021278,
+    "1,5": 0,
+    "1,6": 1000000000,
+    "2,3": 450616064,
+    "2,4": 0,
+    "2,5": 674021278,
+    "2,6": 1000000000,
+    "3,4": 450616064,
+    "3,5": 129180091,
+    "3,6": 325978722,
+    "4,5": 330070053,
+    "4,6": 870819909,
+    "5,6": 219313883
+  },
+  "span_capacity_numerators": [2000000000, 2000000000, 2000000000, 2000000000, 2000000000, 2000000000],
+  "float_minimum_observed": 0.005106397636960345,
+  "representative_float_minimizer": [
+    1.040416723, 1.981052171, 1.043505966,
+    1.979375052, 1.042127946, 1.983307568
+  ],
+  "deduction": {
+    "block_length": 250,
+    "h_cert": {"numerator": 672457041414544284, "denominator": 1000000000000000000},
+    "certified_final_lower": {"numerator": 6732059784, "denominator": 10000000000},
+    "computed_bound": "0.673205978422801196316231755871621404..."
+  }
+}
