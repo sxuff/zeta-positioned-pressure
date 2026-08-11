@@ -10,7 +10,7 @@ Subject to the same imported analytic interface as
 $$
 \liminf_{T\to\infty}\frac{N_0^s(T,2T)}{N(T,2T)}
 \ge 0.6732059784228011963\ldots
->\frac{6732059784}{10^{10}}.
+\gt \frac{6732059784}{10^{10}}.
 $$
 
 This is **67.3205978423%**.  The predecessor's tightened value was
@@ -29,14 +29,14 @@ and let $M$ be the Gram matrix of the retained simple-zero atoms.  The
 imported stability argument gives
 
 $$
-S\ge H_{\mathrm{cert}}N+\mathrm{tr}\,\Psi(M)-o(N),
+S\ge H_{\mathrm{cert}}N+\mathop{\mathrm{tr}}\Psi(M)-o(N),
 \qquad S=N_0^s(T,2T),\ N=N(T,2T),
 $$
 
 where
 
 $$
-\Psi(t)=\begin{cases}(t-1)^2,&0\le t\le2,\\2t-3,&t\ge2.\end{cases}
+\Psi(t)=\begin{cases}(t-1)^2,&0\le t\le2,\cr 2t-3,&t\ge2.\end{cases}
 $$
 
 The window and its kernel are unchanged from the 67.313763% successor.
@@ -49,7 +49,7 @@ $w(x)=k_v(x)^2$.  The new local functional is
 
 $$
 F(g)=\sum_{r=1}^6 b_r g_r
- +\sum_{0\le i<j\le6} a_{ij}w(y_j-y_i).
+ +\sum_{0\le i\lt j\le6} a_{ij}w(y_j-y_i).
 $$
 
 Unlike the predecessor, the linear pressure is **position dependent**.
@@ -87,13 +87,13 @@ each admissible position, and its total weight is at most the span capacity
 2.  Therefore, with
 
 $$
-E_B=2\sum_{i<j}w(y_j-y_i),
+E_B=2\sum_{i\lt j}w(y_j-y_i),
 $$
 
 one obtains
 
 $$
-E_B+B\,\mathrm{span}(B)
+E_B+B\mathop{\mathrm{span}}(B)
 \ge A:=\varepsilon(m-6).
 $$
 
@@ -107,8 +107,8 @@ For an $m\times m$ positive-semidefinite Gram block $G$ with
 $G_{ii}\le1$, define
 
 $$
-E=2\sum_{i<j}|G_{ij}|^2,
-\qquad \Delta=\mathrm{tr}\,\Psi(G).
+E=2\sum_{i\lt j}|G_{ij}|^2,
+\qquad \Delta=\mathop{\mathrm{tr}}\Psi(G).
 $$
 
 Then
@@ -122,7 +122,7 @@ where
 $$
 h_m(E)=
 \begin{cases}
-E,&0\le E\le \dfrac m{m-1},\\
+E,&0\le E\le \dfrac m{m-1},\cr
 \dfrac Em+2\sqrt{\dfrac{m-1}{m}E}-1,
  &E\ge\dfrac m{m-1}.
 \end{cases}
@@ -133,7 +133,7 @@ This profile is sharp for every fixed $m$.
 ### Proof
 
 Let $\lambda_i$ be the eigenvalues, $d_i=G_{ii}$, and
-$t=\mathrm{tr}\,G\le m$.  Cauchy--Schwarz gives
+$t=\mathop{\mathrm{tr}}G\le m$.  Cauchy--Schwarz gives
 
 $$
 E=\sum_i\lambda_i^2-\sum_i d_i^2
@@ -165,14 +165,14 @@ Set $R=h_m(A)$ and $\eta=R/A$.  Concavity and monotonicity of $h_m$
 give
 
 $$
-\mathrm{tr}\,\Psi(G_B)
- +\eta B\,\mathrm{span}(B)\ge R-o(1).
+\mathop{\mathrm{tr}}\Psi(G_B)
+ +\eta B\mathop{\mathrm{span}}(B)\ge R-o(1).
 $$
 
 The usual shifted-block pinching and averaging then imply
 
 $$
-\mathrm{tr}\,\Psi(M)
+\mathop{\mathrm{tr}}\Psi(M)
 \ge \frac{R}{m}S
  -\eta B\frac{m-1}{m}N-o(N).
 $$

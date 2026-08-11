@@ -19,7 +19,7 @@ publishes for itself.
 | 5 | [`trmdy/zeta-simple-zeros-673137`](https://github.com/trmdy/zeta-simple-zeros-673137) | 0.673137630699… | re-optimized 7-term window, weighted 7-point, $h(E)=2\sqrt E-1$ |
 | 6 | [`tawanerguo-cn/zeta-simple-zeros`](https://github.com/tawanerguo-cn/zeta-simple-zeros) | 0.673192911473… | independent branch: Bellman coboundary, $\cos(1.47s)$, $m=183$ |
 | 7 | [`npip99/zeta-zeros`](https://github.com/npip99/zeta-zeros) | 0.673195198901… | raises trmdy's local target to $F\ge509/10^5$, $m=250$ |
-| **8** | **this repository** | **0.673205978423…** | **position-dependent pressure, $F\ge51063/10^7$; sharp finite-$m$ profile $h_m$** |
+| **8** | **this repository** | **0.673205978423…** | **position-dependent pressure, $F\ge51063/10^7$; sharp profile $h_m$** |
 
 Entries 5, 7 and 8 are the same lineage: 7 and 8 both raise the certified
 local minimum $\varepsilon$ of trmdy's weighted seven-point inequality.
@@ -47,7 +47,7 @@ $\varepsilon=51063/10^7$.
 
 Reproducing the arithmetic of the deduction across both profiles isolates
 where the gain comes from (percent, best block length $m$ scanned over
-$50\le m<4000$):
+$50\le m\lt 4000$):
 
 | $\varepsilon$ | pressure | with $h(E)=2\sqrt E-1$ | with sharp $h_m$ |
 | --- | --- | ---: | ---: |
@@ -55,7 +55,7 @@ $50\le m<4000$):
 | $509/10^5$ | uniform | 67.319524% ($m=250$) | 67.319555% ($m=251$) |
 | $51063/10^7$ | positioned | 67.320567% ($m=249$) | **67.320598%** ($m=250$) |
 
-Two things follow. First, the sharp finite-$m$ profile is worth only about
+Two things follow. First, the sharp $h_m$ profile is worth only about
 $3\times10^{-5}$ percentage points on its own — the lead is the pressure
 redistribution, not the profile. Second, a uniform-pressure argument would
 need $\varepsilon\ge0.0051063$ to match this bound, which is above its own

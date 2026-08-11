@@ -4,7 +4,7 @@ This repository records and reproducibly verifies
 
 $$
 \liminf_{T\to\infty}\frac{N_0^s(T,2T)}{N(T,2T)}
-\;\ge\; 0.6732059784228011963\ldots \;>\; \frac{6732059784}{10^{10}},
+ \ge  0.6732059784228011963\ldots  \gt \frac{6732059784}{10^{10}},
 $$
 
 where $N(T,2T)$ counts nontrivial zeros of $\zeta$ with multiplicity and
@@ -57,8 +57,8 @@ $$
 \varepsilon=\tfrac{51063}{10^7}=0.0051063 ,
 $$
 
-which is what produces the improved bound. A sharp finite-$m$ replacement
-$h_m$ for the block-defect profile contributes a further $3\times10^{-5}$
+which is what produces the improved bound. A sharp block-defect profile
+$h_m$, depending on the block length, contributes a further $3\times10^{-5}$
 percentage points.
 
 This matters because the uniform-pressure branch is already saturated:
@@ -145,8 +145,7 @@ that predecessor. If any of those inputs is wrong, this bound falls with them.
 
 **Not done.** No native Arb (`python-flint`) rerun of the new positioned
 certificate. No Lean formalization of the new finite-dimensional deduction.
-No independent human expert review. The finite-dimensional Gram profile
-$h_m$ and the block deduction in [`proof.md`](proof.md) §3–§4 are the parts
+No independent human expert review. The Gram profile $h_m$ and the block deduction in [`proof.md`](proof.md) §3–§4 are the parts
 most in need of that review; they are ordinary finite linear algebra, but
 they are new here and have not been checked by a mathematician.
 
@@ -168,4 +167,4 @@ The analytic framework is Claude/Anthropic's. The re-optimized seven-term
 window, the weighted seven-point form, and the block-defect approach are from
 `ainta/zeta-simple-zeros` and `trmdy/zeta-simple-zeros-673137`. This
 repository contributes the position-dependent pressure certificate, the sharp
-finite-$m$ profile, and the reproduction above.
+sharp $h_m$ profile, and the reproduction above.
